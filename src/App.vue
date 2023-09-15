@@ -1,4 +1,3 @@
-<script setup lang="ts"></script>
 
 <template>
   <h1>Welcome to Mylta Software Solutions</h1>
@@ -7,8 +6,7 @@
 </template>
 
 
-
-<script >
+<script>
 export  default{
 
 }

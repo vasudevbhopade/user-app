@@ -6,7 +6,7 @@
         <p>How it Works</p>
         <p>Security</p>
         <p>Resources</p>
-        <p>Report a Bug</p>
+        <p>Report a  the Bug</p>
       </div>
       <div class="nav-column">
         <h2>About Us</h2>
