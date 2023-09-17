@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Welcome to Mylta Software Solution</h1>
+  <div>
+    <router-view/>
+    <h1>hi</h1>
+  </div>
 </template>
+
+<script setup lang="ts"></script>
 
 <style scoped></style>
