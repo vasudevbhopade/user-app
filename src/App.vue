@@ -1,19 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Welcome to Mylta Software Solutions</h1>
-
-  <the-footer></the-footer>
+  <Footer />
 </template>
 
-
-
-<script >
-export  default{
-
-}
+<script setup lang="ts">
+import Footer from "./components/Footer.vue";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
