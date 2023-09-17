@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import TheFooter from './components/TheFooter.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./routers";
 
-const app = createApp(App)
-app.mount('#app')
+const app = createApp(App).use(router);
+app.mount("#app");
