@@ -15,19 +15,19 @@ const links = [
     route: "/",
   },
   {
-    title: "Home",
+    title: "Services",
     route: "/services",
   },
   {
-    title: "Home",
+    title: "Technologies",
     route: "/technologies",
   },
   {
-    title: "Home",
+    title: "About",
     route: "/about",
   },
   {
-    title: "Home",
+    title: "Contact",
     route: "/contact",
   },
 ];
