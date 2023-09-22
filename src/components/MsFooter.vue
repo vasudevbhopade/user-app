@@ -11,7 +11,7 @@
       </div>
       <div class="nav-column">
         <h2>Subscribe</h2>
-        <input type="email" placeholder="Enter Your email.." v-model="email" />
+        <input v-model="email" type="email" placeholder="Enter Your email.." />
         <span class="social-links">
           <a
             v-for="social in socialMedia"
@@ -41,7 +41,7 @@ const socialMedia = ref(["Facebook", "Twitter", "Google", "LinkedIn"]);
 const email = ref("");
 const currentYear = computed(() => new Date().getFullYear());
 
-function getSocialLink(social: String) {
+function getSocialLink(social: string) {
   switch (social) {
     case "Facebook":
       return "#facebook-link";

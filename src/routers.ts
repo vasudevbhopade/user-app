@@ -1,34 +1,34 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeNav from "./components/HomeNav.vue";
-import About from "./components/About.vue";
-import Contact from "./components/Contact.vue";
-import Services from "./components/Services.vue";
-import Technologies from "./components/Technologies.vue";
+import MsHome from "./components/MsHome.vue";
+import MsAbout from "./components/MsAbout.vue";
+import MsContact from "./components/MsContact.vue";
+import MsServices from "./components/MsServices.vue";
+import MsTechnologies from "./components/MsTechnologies.vue";
 
 const routes = [
   {
     name: "homenav",
-    component: HomeNav,
+    component: MsHome,
     path: "/",
   },
   {
     name: "about",
-    component: About,
+    component: MsAbout,
     path: "/about",
   },
   {
     name: "contact",
-    component: Contact,
+    component: MsContact,
     path: "/contact",
   },
   {
     name: "services",
-    component: Services,
+    component: MsServices,
     path: "/services",
   },
   {
     name: "technologies",
-    component: Technologies,
+    component: MsTechnologies,
     path: "/technologies",
   },
 ];
