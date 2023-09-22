@@ -1,11 +1,4 @@
 <template>
-  <!-- <div class="nav">
-    <router-link to="/"><h2>MyltaSS</h2></router-link>
-    <router-link v-for="(link, index) in links" :key="index" :to="link.route"
-      ><h3>{{ link.title }}</h3></router-link
-    >
-    <span><h3>#number</h3></span>
-  </div> -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-float navbar-center">
     <div class="container navbar-flex">
       <div>
@@ -21,7 +14,9 @@
           {{ link.title }}
         </router-link>
       </div>
-      <div class="ml-auto">
+    </div>
+    <div>
+      <div class="ml-auto navbar-flex">
         <router-link to="/" class="btn btn-outline rounded-pill">
           <img
             src="./assets/img/phone-alt-solid.svg"
@@ -35,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import '../css/navBar.css'
+import "../css/navBar.css";
 const links = [
   {
     title: "Home",

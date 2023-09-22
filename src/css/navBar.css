@@ -18,10 +18,11 @@
 a {
     text-decoration: none;
   }
-  /* .navbar-center{
+  .navbar-center{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-  } */
+  }
   .navbar-flex {
     display: flex;
     justify-content: space-around;
