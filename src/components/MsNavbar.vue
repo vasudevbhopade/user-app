@@ -6,10 +6,10 @@
           ><span>Mylta</span><span class="text-primary">SS</span></router-link
         >
         <router-link
-          class="navbar-nav ml-lg-4 pt-3 pt-lg-0 nav-item nav-link"
           v-for="(link, index) in links"
           :key="index"
           :to="link.route"
+          class="navbar-nav ml-lg-4 pt-3 pt-lg-0 nav-item nav-link"
         >
           {{ link.title }}
         </router-link>
@@ -17,9 +17,9 @@
     </div>
     <div>
       <div class="ml-auto navbar-flex">
-        <router-link to="/" class="btn btn-outline rounded-pill">
+        <router-link to="/" class="btn btn-outline rounded-pill navbar-flex">
           <img
-            src="./assets/img/phone-alt-solid.svg"
+            src="../../assets/img/phone-alt-solid.svg"
             alt="phone"
             style="width: 20px"
           />+91 98581 14114
