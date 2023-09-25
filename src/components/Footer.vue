@@ -9,20 +9,17 @@
           <p><a href="#">+91 98581 14114</a></p>
         </div>
         <div class="col-lg-3 py-3">
-          <h5>Quick Links</h5>
-          <ul class="footer-menu">
-            <li><a href="./contact.html">How it works</a></li>
-            <li><a href="./contact.html">Security</a></li>
-            <li><a href="./technologies.html">Resources</a></li>
-            <li><a href="./contact.html">Report a Bug</a></li>
-          </ul>
-        </div>
+            <h5>Quick Links</h5>
+            <ul v-for="(link , index) in quickLinks" :key="index" class="footer-menu">
+              <li><a href="./contact.html">{{ link }}</a></li>
+            
+            </ul>
+          </div>
         <div class="col-lg-3 py-3">
           <h5>About Us</h5>
-          <ul class="footer-menu">
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Jobs</a></li>
-            <li><a href="./contact.html">Our Teams</a></li>
+          <ul v-for="about in aboutUs" :key="about" class="footer-menu">
+            <li ><a href="#">{{ about }}</a></li>
+        
           </ul>
         </div>
         <div class="col-lg-3 py-3">
@@ -35,27 +32,16 @@
             />
           </form>
 
-          <!-- <div class="sosmed-button mt-4">
-            <a href="./contact.html"><span class="mai-logo-facebook-f"></span></a>
-            <a href="./contact.html"><span class="mai-logo-twitter"></span></a>
-            <a href="./contact.html"><span class="mai-logo-google"></span></a>
-            <a href="https://www.linkedin.com/company/mylta-software-solutions/"><span class="mai-logo-linkedin"></span></a>
-          </div> -->
-          <div class="sosmed-button mt-4">
-            <a href="#"><span class="bi bi-facebook"></span></a>
-            <a href="#"><span class="bi bi-twitter"></span></a>
-            <a href="#"><span class="bi bi-google"></span></a>
-            <a href="https://www.linkedin.com/company/mylta-software-solutions/"
-              ><span class="bi bi-linkedin"></span
-            ></a>
-          </div>
+          <span v-for="(media, index) in socialMedia" :key="index" class="sosmed-button mt-4">
+            <a href="#"><span> {{ media }}</span></a>
+          </span>
         </div>
       </div>
 
       <div class="row">
         <div class="col-sm-6 py-2">
           <p id="copyright">
-            &copy; 2020 <a href="../index.html">MyltaSS</a>. All rights reserved
+            &copy; {{ currentYear }}<a href="../index.html">MyltaSS</a>. All rights reserved
           </p>
         </div>
       </div>
@@ -410,6 +396,7 @@ textarea.form-control {
   height: auto;
 }
 .sosmed-button a {
+  margin: 12px;
   display: inline-block;
   width: 40px;
   height: 40px;
