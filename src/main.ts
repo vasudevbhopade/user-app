@@ -4,4 +4,3 @@ import router from "./routers";
 
 const app = createApp(App).use(router);
 app.mount("#app");
-console.log("loggg");
