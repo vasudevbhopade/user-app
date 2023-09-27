@@ -13,11 +13,6 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run typecheck && npm run lint-scan && CI=true"
-    }
-  },
   "dependencies": {
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
