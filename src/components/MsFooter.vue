@@ -115,4 +115,3 @@ const getSocialLink = (social: string) => {
   }
 };
 </script>
-../interfaces/IMsFooterLinks
