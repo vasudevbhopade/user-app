@@ -1,96 +1,117 @@
 <template>
-  <section>
-    <div id="app" class="footer">
-      <div class="nav-column">
-        <h2>Quick Links</h2>
-        <p v-for="link in quickLinks" :key="link">{{ link }}</p>
-      </div>
-      <div class="nav-column">
-        <h2>About Us</h2>
-        <p v-for="about in aboutUs" :key="about">{{ about }}</p>
-      </div>
-      <div class="nav-column">
-        <h2>Subscribe</h2>
-        <input v-model="email" type="email" placeholder="Enter Your email.." />
-        <span class="social-links">
-          <a
-            v-for="social in socialMedia"
-            :key="social"
-            :href="getSocialLink(social)"
-            >{{ social }}</a
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-3 py-3">
+          <h3>Mylta<span class="text-primary">SS</span></h3>
+          <p><router-link to="/">info@myltass.com</router-link></p>
+          <p><router-link to="/">+91 98581 14114</router-link></p>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Quick Links</h5>
+          <ul
+            v-for="(link, index) in quickLinks"
+            :key="index"
+            class="footer-menu"
           >
-        </span>
-        <div class="copyRight">
-          <p>&copy; {{ currentYear }} MyltaSS. All rights reserved</p>
+            <li>
+              <router-link :to="link.route">{{ link.label }}</router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>About Us</h5>
+          <ul
+            v-for="(about, index) in aboutUs"
+            :key="index"
+            class="footer-menu"
+          >
+            <li>
+              <router-link :to="about.route">{{ about.label }}</router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Subscribe</h5>
+          <form action="#">
+            <input
+              v-model="email"
+              type="text"
+              class="form-control"
+              placeholder="Enter your mail.."
+            />
+          </form>
+          <div class="sosmed-button mt-4">
+            <a
+              v-for="(social, index) in socialMedia"
+              :key="index"
+              :href="getSocialLink(social.name)"
+              ><i :class="social.mediaIcon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 py-2">
+          <p id="copyright">
+            &copy; {{ currentYear }} <router-link to="/">MyltaSS</router-link>.
+            All rights reserved
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-const quickLinks = ref([
-  "How it Works",
-  "Security",
-  "Resources",
-  "Report a Bug",
-]);
-const aboutUs = ref(["About Us", "Jobs", "Our Teams"]);
-const socialMedia = ref(["Facebook", "Twitter", "Google", "LinkedIn"]);
+import IMsFooterSocial from "../interfaces/IMsFooterSocial";
+import IMsFooterLinks from "../interfaces/IMsFooterLinks";
+import "../css/theme.css";
 const email = ref("");
+const quickLinks: IMsFooterLinks[] = [
+  {
+    label: "How it Works",
+    route: "/contact",
+  },
+  {
+    label: "Security",
+    route: "/contact",
+  },
+  {
+    label: "Resources",
+    route: "/contact",
+  },
+  {
+    label: "Report a Bug",
+    route: "/contact",
+  },
+];
+const aboutUs: IMsFooterLinks[] = [
+  { label: "About Us", route: "/contact" },
+  { label: "Jobs", route: "/contact" },
+  { label: "Our Teams", route: "/contact" },
+];
+const socialMedia: IMsFooterSocial[] = [
+  { name: "Facebook", mediaIcon: "bi bi-facebook" },
+  { name: "Twitter", mediaIcon: "bi bi-twitter" },
+  { name: "Google", mediaIcon: "bi bi-google" },
+  { name: "LinkedIn", mediaIcon: "bi bi-linkedin" },
+];
 const currentYear = computed(() => new Date().getFullYear());
 
-function getSocialLink(social: string) {
+const getSocialLink = (social: string) => {
   switch (social) {
     case "Facebook":
-      return "#facebook-link";
+      return "#facebook-link"; // few links are acting placeholder
     case "Twitter":
       return "#twitter-link";
     case "Google":
       return "#google-link";
     case "LinkedIn":
-      return "#linkedin-link";
+      return "https://www.linkedin.com/company/mylta-software-solutions/";
     default:
       return "#";
   }
-}
+};
 </script>
-
-<style scoped>
-.footer {
-  display: flex;
-  background-color: #f5f5f5;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: #333;
-}
-
-.nav-column {
-  flex: 1;
-  padding: 20px;
-}
-
-.nav-column h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.nav-column p {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-input[type="email"] {
-  width: 50%;
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-
-.social-links a {
-  margin-top: 0.5rem;
-  text-decoration: none;
-  color: #333;
-}
-</style>
