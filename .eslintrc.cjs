@@ -20,6 +20,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "vue/multi-word-component-names": "error",
+    "no-console": ["warn", { allow: ["warn", "error", "debug"] }],
     "vue/component-tags-order": [
       "error",
       {
