@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <div class="page-banner" :style="bannerStyle">
+    <div class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">
@@ -11,7 +11,7 @@
               <li class="breadcrumb-item active">Services</li>
             </ul>
           </nav>
-          <h1 class="text-center" :style="bannerTextStyle">Services</h1>
+          <h1 class="text-center banner-text">Services</h1>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
           </div>
           <div class="col-lg-6 py-3">
             <div class="img-place text-center">
-              <img src="../../assets/img/bg_image_3.png" alt="" />
+              <img src="../assets/img/bg_image_3.png" alt="" />
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div class="row mt-5 text-center">
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../../assets/img/icon-shap.svg" />
+                <img src="../assets/img/icon-shap.svg" />
               </div>
               <h5>High Performance</h5>
               <p>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../../assets/img/icon-shap.svg" />
+                <img src="../assets/img/icon-shap.svg" />
               </div>
               <h5>Friendly Prices</h5>
               <p>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../../assets/img/icon-shap.svg" />
+                <img src="../assets/img/icon-shap.svg" />
               </div>
               <h5>No time-confusing</h5>
               <p>
@@ -93,17 +93,20 @@
     </div>
   </main>
 </template>
+
 <script setup lang="ts">
 import "../css/theme.css";
-
-const bannerStyle = {
-  backgroundImage: "url(../assets/banner/services-banner.jpg)",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "100% 100%",
-};
-
-const bannerTextStyle = {
-  color: "white",
-  textShadow: "0 0 2px #0056b3, 0 0 2px #0000ff",
-};
 </script>
+
+<style scoped>
+.page-banner {
+  background-image: url(../assets/banner/services-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner-text {
+  color: white;
+  text-shadow: 0 0 2px #0056b3, 0 0 2px #0000ff;
+}
+</style>

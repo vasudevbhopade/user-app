@@ -1,13 +1,6 @@
 <template>
   <div class="container mt-5">
-    <div
-      class="page-banner"
-      style="
-        background-image: url(../assets/banner/about-us-banner.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      "
-    >
+    <div class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">
@@ -35,7 +28,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="../../assets/img/bg_image_2.png" alt="" />
+              <img src="../assets/img/bg_image_2.png" alt="" />
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
@@ -73,6 +66,15 @@
     </div>
   </main>
 </template>
+
 <script setup lang="ts">
 import "../css/theme.css";
 </script>
+
+<style scoped>
+.page-banner {
+  background-image: url(../assets/banner/about-us-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+</style>
