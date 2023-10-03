@@ -1,29 +1,17 @@
 <template>
   <div class="container mt-5">
-    <div
-      class="page-banner"
-      style="
-        background-image: url(../assets/banner/contact-us-banner.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      "
-    >
+    <div class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">
             <ul class="breadcrumb justify-content-center py-0 bg-transparent">
               <li class="breadcrumb-item">
-                <a href="../index.html">Home</a>
+                <router-link to="/">Home</router-link>
               </li>
               <li class="breadcrumb-item active">Contact</li>
             </ul>
           </nav>
-          <h1
-            class="text-center"
-            style="color: white; text-shadow: 0 0 2px #0056b3, 0 0 2px #0000ff"
-          >
-            Contact Us
-          </h1>
+          <h1 class="text-center">Contact Us</h1>
         </div>
       </div>
     </div>
@@ -111,6 +99,19 @@ import { ref } from "vue";
 const user = ref({ name: "", email: "" });
 const feedback = ref("");
 const sendFeedback = () => {
-  console.log(user, feedback, "working...");
+  //console.log(user, feedback, "working...");
 };
 </script>
+
+<style scoped>
+.page-banner {
+  background-image: url(../assets/banner/services-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-center {
+  color: white;
+  text-shadow: 0 0 2px #0056b3, 0 0 2px #0000ff;
+}
+</style>
