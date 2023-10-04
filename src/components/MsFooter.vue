@@ -57,6 +57,11 @@
             &copy; {{ currentYear }} <router-link to="/">MyltaSS</router-link>.
             All rights reserved
           </p>
+          <div>
+            <button id="back-to-top" @click="scrollToTop">
+              <i class="bi bi-arrow-up"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -113,5 +118,11 @@ const getSocialLink = (social: string) => {
     default:
       return "#";
   }
+};
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 </script>

@@ -1102,6 +1102,27 @@ a.text-dark:focus {
   pointer-events: none;
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f6f5fc; 
+  color: #898798; 
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #f6f5fd;
+  transform: scale(1.1); 
+}
+
+
 .btn {
   padding: 8px 24px;
 }
