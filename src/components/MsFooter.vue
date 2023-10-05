@@ -58,9 +58,7 @@
             All rights reserved
           </p>
           <div>
-            <button id="back-to-top" @click="scrollToTop">
-              <i class="bi bi-arrow-up"></i>
-            </button>
+            <button id="back-to-top" @click="scrollToTop"></button>
           </div>
         </div>
       </div>

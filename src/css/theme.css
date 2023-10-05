@@ -1105,23 +1105,40 @@ a.text-dark:focus {
 #back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  background-color: #f6f5fc; 
-  color: #898798; 
-  width: 40px;
-  height: 40px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
   border: none;
   border-radius: 50%;
-  font-size: 24px;
+  background: rgba(224, 223, 233, 0.7);
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: all 0.2s ease;
+  z-index: 1100;
+}
+
+#back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -4px auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #555;
+  border-right: 2px solid #555;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 #back-to-top:hover {
-  background-color: #f6f5fd;
-  transform: scale(1.1); 
+  background: #6c55f9;
 }
 
+#back-to-top:hover::after {
+  border-color: #fff;
+}
 
 .btn {
   padding: 8px 24px;
