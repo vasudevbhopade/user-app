@@ -78,7 +78,7 @@
                 <textarea
                   v-model="feedback"
                   rows="6"
-                  class="form-control"
+                  class="form-control01"
                   placeholder="Enter message"
                 />
               </div>
@@ -96,16 +96,17 @@
 <script setup lang="ts">
 import "../css/theme.css";
 import { ref } from "vue";
-const user = ref({ name: "", email: "" });
+import IMsContactUserDetails from "../interfaces/IMsContactUserDetails";
+const user = ref<IMsContactUserDetails>({ name: "", email: "" });
 const feedback = ref("");
 const sendFeedback = () => {
-  //console.log(user, feedback, "working...");
+  // POST call to send feedback is to be done after the backend setup.
 };
 </script>
 
 <style scoped>
 .page-banner {
-  background-image: url(../assets/banner/services-banner.jpg);
+  background-image: url(../assets/banner/contact-us-banner.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
