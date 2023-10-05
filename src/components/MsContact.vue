@@ -78,7 +78,7 @@
                 <textarea
                   v-model="feedback"
                   rows="6"
-                  class="form-control01"
+                  class="text-area"
                   placeholder="Enter message"
                 />
               </div>
