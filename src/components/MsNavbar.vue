@@ -33,7 +33,7 @@
         <div class="ml-auto">
           <a href="#" class="btn btn-outline rounded-pill">
             <img
-              src="../../assets/img/phone-alt-solid.svg"
+              src="../assets/img/phone-alt-solid.svg"
               alt=""
               style="width: 20px"
             />+91 98581 14114

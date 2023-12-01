@@ -12,7 +12,7 @@ import MsServices from './MsServices.vue';
         </div>
         <div class="col-lg-6 py-3 wow zoomIn">
           <div class="img-place">
-            <img src="../../assets/img/bg_image_1.png" alt="" />
+            <img src="../assets/img/bg_image_1.png" alt="" />
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ import MsServices from './MsServices.vue';
         <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
           <div class="d-flex flex-row">
             <div class="img-fluid mr-3">
-              <img src="../../assets/img/icon_pattern.svg" alt="" />
+              <img src="../assets/img/icon_pattern.svg" alt="" />
             </div>
             <div>
               <h5>Provide financial advice by our advisor</h5>
@@ -37,7 +37,7 @@ import MsServices from './MsServices.vue';
         <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
           <div class="d-flex flex-row">
             <div class="img-fluid mr-3">
-              <img src="../../assets/img/icon_pattern.svg" alt="" />
+              <img src="../assets/img/icon_pattern.svg" alt="" />
             </div>
             <div>
               <h5>Complete solutions for global organizations</h5>
@@ -49,7 +49,7 @@ import MsServices from './MsServices.vue';
         <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
           <div class="d-flex flex-row">
             <div class="img-fluid mr-3">
-              <img src="../../assets/img/icon_pattern.svg" alt="" />
+              <img src="../assets/img/icon_pattern.svg" alt="" />
             </div>
             <div>
               <h5>Provide financial advice by our advisor</h5>
@@ -60,34 +60,6 @@ import MsServices from './MsServices.vue';
       </div>
     </div>
   </div>
-
-  <!-- <div class="page-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 py-3 wow zoomIn">
-          <div class="img-place text-center">
-            <img src="../../assets/img/bg_image_2.png" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-6 py-3 wow fadeInRight">
-          <h2 class="title-section">
-            We're <span class="marked">Dynamic</span> Team of Creatives People
-          </h2>
-          <div class="divider"></div>
-          <p>
-            We provide marketing services to startups & small business to
-            looking for partner for their digital media, design & dev lead
-            generation & communication.
-          </p>
-          <div class="img-place mb-3">
-            <img src="../../assets/img/testi_image.png" alt="" />
-          </div>
-          <a href="#" class="btn btn-primary">More Details</a>
-          <a href="#" class="btn btn-outline border ml-2">Success Stories</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <MsAbout />
   <MsServices />
   <MsContact />

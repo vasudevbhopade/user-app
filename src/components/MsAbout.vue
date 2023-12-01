@@ -28,7 +28,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="../../assets/img/bg_image_2.png" alt="" />
+              <img src="../assets/img/bg_image_2.png" alt="" />
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
@@ -42,7 +42,7 @@
               generation & communication.
             </p>
             <div v-if="$route.path === '/'" class="img-place mb-3">
-              <img src="../../assets/img/testi_image.png" alt="" />
+              <img src="../assets/img/testi_image.png" alt="" />
             </div>
           </div>
         </div>
