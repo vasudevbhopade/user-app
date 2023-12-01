@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <div class="page-banner">
+    <div v-if="$route.path !== '/'" class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">

@@ -1145,7 +1145,6 @@ a.text-dark:focus {
 }
 
 .navbar-float {
-  position: static;
   top: 0px;
   left: 0;
   width: 100%;

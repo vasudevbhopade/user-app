@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <div class="page-banner">
+    <div v-if="$route.path !== '/'" class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">
@@ -28,7 +28,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="../assets/img/bg_image_2.png" alt="" />
+              <img src="../../assets/img/bg_image_2.png" alt="" />
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
@@ -41,12 +41,15 @@
               looking for partner for their digital media, design & dev lead
               generation & communication.
             </p>
+            <div v-if="$route.path === '/'" class="img-place mb-3">
+              <img src="../../assets/img/testi_image.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page-section counter-section">
+    <!-- <div class="page-section counter-section">
       <div class="container">
         <div class="row align-items-center text-center">
           <div class="col-lg-4">
@@ -63,7 +66,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
 </template>
 

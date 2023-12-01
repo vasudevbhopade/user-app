@@ -1,5 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-float">
+  <nav
+    class="navbar navbar-expand-lg navbar-light navbar-float"
+    :class="$route.path === '/' ? 'position-absolute' : 'position-static'"
+  >
     <div class="container">
       <router-link to="/" class="navbar-brand"
         >Mylta<span class="text-primary">SS</span></router-link
@@ -30,7 +33,7 @@
         <div class="ml-auto">
           <a href="#" class="btn btn-outline rounded-pill">
             <img
-              src="../assets/img/phone-alt-solid.svg"
+              src="../../assets/img/phone-alt-solid.svg"
               alt=""
               style="width: 20px"
             />+91 98581 14114

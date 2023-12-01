@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <div class="page-banner">
+    <div v-if="$route.path !== '/'" class="page-banner">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
           <nav aria-label="Breadcrumb">
@@ -34,7 +34,7 @@
           </div>
           <div class="col-lg-6 py-3">
             <div class="img-place text-center">
-              <img src="../assets/img/bg_image_3.png" alt="" />
+              <img src="../../assets/img/bg_image_3.png" alt="" />
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div class="row mt-5 text-center">
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../assets/img/icon-shap.svg" />
+                <img src="../../assets/img/icon-shap.svg" />
               </div>
               <h5>High Performance</h5>
               <p>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../assets/img/icon-shap.svg" />
+                <img src="../../assets/img/icon-shap.svg" />
               </div>
               <h5>Friendly Prices</h5>
               <p>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-lg-4 py-3 wow fadeInUp">
               <div class="display-3">
-                <img src="../assets/img/icon-shap.svg" />
+                <img src="../../assets/img/icon-shap.svg" />
               </div>
               <h5>No time-confusing</h5>
               <p>
