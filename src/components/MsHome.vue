@@ -1,4 +1,3 @@
-import MsServices from './MsServices.vue';
 <template>
   <div class="page-banner home-banner">
     <div class="container h-100">

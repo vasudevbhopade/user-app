@@ -46,39 +46,39 @@
 const technologies = [
   {
     key: 1,
-    src: "../assets/technologies/Technology-1.png",
+    src: "../../technologies/Technology-1.png",
   },
   {
     key: 2,
-    src: "../assets/technologies/Technology-2.png",
+    src: "../../technologies/Technology-2.png",
   },
   {
     key: 3,
-    src: "../assets/technologies/Technology-3.jpg",
+    src: "../../technologies/Technology-3.jpg",
   },
   {
     key: 4,
-    src: "../assets/technologies/Technology-4.png",
+    src: "../../technologies/Technology-4.png",
   },
   {
     key: 5,
-    src: "../assets/technologies/Technology-5.png",
+    src: "../../technologies/Technology-5.png",
   },
   {
     key: 6,
-    src: "../assets/technologies/Technology-6.png",
+    src: "../../technologies/Technology-6.png",
   },
   {
     key: 7,
-    src: "../assets/technologies/Technology-7.png",
+    src: "../../technologies/Technology-7.png",
   },
   {
     key: 8,
-    src: "../assets/technologies/Technology-8.png",
+    src: "../../technologies/Technology-8.png",
   },
   {
     key: 9,
-    src: "../assets/technologies/Technology-9.png",
+    src: "../../technologies/Technology-9.png",
   },
 ];
 </script>
