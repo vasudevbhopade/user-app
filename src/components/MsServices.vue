@@ -100,7 +100,7 @@ import "../css/theme.css";
 
 <style scoped>
 .page-banner {
-  background-image: url(../assets/banner/services-banner.jpg);
+  background-image: url(../assets/banner/services-banner-new.JPG);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

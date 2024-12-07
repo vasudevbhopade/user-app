@@ -76,7 +76,7 @@ import "../css/theme.css";
 
 <style scoped>
 .page-banner {
-  background-image: url(../assets/banner/about-us-banner.jpg);
+  background-image: url(../assets/banner/about-us-banner-new.JPG);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
